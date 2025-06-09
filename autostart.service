@@ -4,8 +4,8 @@ Description=Non-Optimal Imaging Camera
 After=default.target
 
 [Service]
-ExecStart=/usr/bin/python3 /home/awd/non-optimal-imaging/camera/main.py
-WorkingDirectory=/home/awd/non-optimal-imaging/camera
+ExecStart=/usr/bin/python3 /home/awd/non_optimal_imaging/camera/main.py
+WorkingDirectory=/home/awd/non_optimal_imaging/camera
 Restart=always
 User=awd
 
