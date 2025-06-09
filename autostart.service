@@ -1,0 +1,15 @@
+# /etc/systemd/system/nonoptimal.service
+# change username when adding to a non op camera
+[Unit]
+Description=Non-Optimal Imaging Camera
+After=default.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/awdriggs/non-optimal-imaging/camera/main.py
+WorkingDirectory=/home/awdriggs/non-optimal-imaging/camera
+Restart=always
+User=awdriggs
+
+[Install]
+WantedBy=multi-user.target
+
